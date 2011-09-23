@@ -1,0 +1,25 @@
+body {
+  font: 12px Verdana, sans-serif;
+}
+h1 {
+  font-size: 14px;
+}
+.img {
+  border: 0;
+}
+#body_wrap {
+  width: 800px;
+  margin: 20px auto;
+}
+header {
+  width: 600px;
+  margin: 0 auto 10px;
+}
+.display {
+  margin: 0 auto;
+  width: 550px;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+  background: #eee url('../images/Astrology-Logo.jpg') no-repeat center center;
+}

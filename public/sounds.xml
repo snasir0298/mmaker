@@ -1,0 +1,37 @@
+<sounds>
+	<sound>
+		<id></id>
+		<url></url>
+		<duration>3000</duration>
+	</sound>
+	
+	<sound>
+		<id>0</id>
+		<url>media/MediaMaker_Welcome.mp3</url>
+		<duration>12500</duration>
+	</sound>
+
+	<sound>
+		<id>1</id>
+		<url>media/MediaMaker_Aquarius.mp3</url>
+		<duration>14000</duration>
+	</sound>
+
+	<sound>
+		<id>2</id>
+		<url>media/MediaMaker_Love.mp3</url>
+		<duration>2000</duration>
+	</sound>
+
+	<sound>
+		<id>3</id>
+		<url>media/MediaMaker_Venus-in-Leo.mp3</url>
+		<duration>6000</duration>
+	</sound>
+
+	<sound>
+		<id>4</id>
+		<url>media/MediaMaker_Get-Ready.mp3</url>
+		<duration>7000</duration>
+	</sound>
+</sounds>

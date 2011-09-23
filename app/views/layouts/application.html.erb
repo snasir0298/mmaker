@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Media</title>
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application" %>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javascripts/jquery.cross-slide.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javascripts/jqFancyTransitions.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javascripts/soundmanager2-nodebug-jsmin.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javascripts/main.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javascripts/jquery.easing.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javascripts/jquery.nivo.slider.pack.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="stylesheets/main.css" type="text/css" media="screen" title="no title" charset="utf-8"></link>
+    <link rel="stylesheet" href="stylesheets/themes/default/default.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="stylesheets/themes/pascal/pascal.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="stylesheets/themes/orman/orman.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="stylesheets/nivo-slider.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen" />
+<%#= csrf_meta_tags %>
+  </head>  
+  <body>
+    <div id="body_wrap">
+      <header>
+      <h1>Real Time Media Maker Demo</h1>
+      Featuring:
+      <ul>
+        <li>Dynamic sequencing</li>
+        <li>Javascript (Flash fallbacks)</li>
+        <li>Stitched sound clips with background music</li>
+        <li>Image animation</li>
+        <li>Cross-browser libraries (needs testing)</li>
+        <li>Next steps: better sound buffer handling, locking sound to images to ensure they stay in sync, bug fixes, etc...</li>
+      </ul>
+      <header>
+      <%= yield %>
+    </div>
+  </body>
+</html>
