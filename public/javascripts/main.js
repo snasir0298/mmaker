@@ -19,11 +19,9 @@ function play_media(sounds_arr,images_arr,bg_sound){
     soundManager.useFlashBlock = false;
     var soundIndex;
     var currentTimer;
-
     set_bg_sound(bg_sound); // Set BackGround Music to play
     set_sounds(sounds_arr); // Setting the sounds to play
     set_images(images_arr); // Setting the images to display
-
     var playSoundIfPresent = function (maybeSound) {
         if (maybeSound != null) {
             maybeSound.setVolume(100);
@@ -40,39 +38,29 @@ function play_media(sounds_arr,images_arr,bg_sound){
             $('#slider').data('nivoslider').start();
             get_sound_images(sounds[soundIndex].s_id);
             playSoundIfPresent(sounds[soundIndex].sound);
-            currentTimer = setTimeout(changeSound, sounds[soundIndex].duration);
+            currentTimer = setTimeout(changeSound, sounds[soundIndex].duration);            
             $('#slider').nivoSlider({
                 effect:'random', // Specify sets like: 'fold,fade,sliceDown'
                 animSpeed:500, // Slide transition speed
-                pauseTime:30000, // How long each slide will show
-                startSlide:0, // Set starting Slide (0 index)
-                directionNav:true, // Next & Prev navigation
-                directionNavHide:true, // Only show on hover
-                controlNav:true, // 1,2,3... navigation
-                controlNavThumbs:false, // Use thumbnails for Control Nav
-                controlNavThumbsFromRel:false, // Use image rel for thumbs
-                controlNavThumbsSearch: '.jpg', // Replace this with...
-                controlNavThumbsReplace: '_thumb.jpg', // ...this in thumb Image src
-                keyboardNav:true, // Use left & right arrows
-                pauseOnHover:false, // Stop animation while hovering
-                manualAdvance:false, // Force manual transitions
-                captionOpacity:0.8, // Universal caption opacity
-                prevText: 'Prev', // Prev directionNav text
-                nextText: 'Next' // Next directionNav text
+                pauseTime:10, // How long each slide will show
+                startSlide:0 // Set starting Slide (0 index)
             });
-
         } else {
             // Organic ending
             backgroundSound.stop();
             $('.action').attr('value', 'Play');
             $('#slider').nivoSlider({
-                startSlide:0 //Set starting Slide (0 index)                
+                effect:'random', // Specify sets like: 'fold,fade,sliceDown'
+                animSpeed:500, // Slide transition speed
+                pauseTime:10, // How long each slide will show
+                startSlide:0 // Set starting Slide (0 index)
             });
             $('#slider').data('nivoslider').stop();
         }
     }
 
-    if ($('.action').attr('value') === 'Play') {        
+    if ($('.action').attr('value') === 'Play') {
+        
         backgroundSound.setVolume(40);
         backgroundSound.play();
         soundIndex = 0;

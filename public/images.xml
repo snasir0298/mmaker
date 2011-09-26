@@ -10,16 +10,6 @@
     </image>
 
     <image>
-        <src>images/Whitish-Rectangle.jpg</src>
-        <alt>Personal Profile</alt>
-        <from>100% 100% 1x</from>
-        <to>100% 100% 1x</to>
-        <dir>down</dir>
-        <time>.1</time>
-        <sound_id></sound_id>
-    </image>
-
-    <image>
         <src>images/Title.jpg</src>
         <alt></alt>
         <from>100% 100% 1x</from>
@@ -58,6 +48,16 @@
         <time>8</time>
         <sound_id>1</sound_id>
     </image>
+
+    <image>
+        <src>images/Aquarius.jpg</src>
+        <alt>Aquarius</alt>
+        <from>100% 80% 1.5x</from>
+        <to>80% 0% 1.1x</to>
+        <dir>down</dir>
+        <time>8</time>
+        <sound_id>1</sound_id>
+    </image>	
   
     <image>
         <src>images/Persuasive-Essay-Ideas.jpg</src>
